@@ -1,2 +1,2 @@
-# navidys-inspec-podman-resource
-inspec podman resource
+# inspec-podman-resource
+Chef InSpec Podman Resource
