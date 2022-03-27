@@ -11,7 +11,7 @@ module Inspec::Resources
 
     supports platform: "linux"
 
-    desc "podman (daemonless container engine) image resource"
+    desc "A resource to retrieve information about podman images"
 
     example <<~EXAMPLE
       describe podman_image('docker.io/library/httpd:latest') do
