@@ -1,17 +1,17 @@
 +++
-title = "podman_pod resource"
+title = "podman_container resource"
 draft = false
 gh_repo = "inspec"
 platform = "linux"
 
 [menu]
   [menu.inspec]
-    title = "podman_pod"
-    identifier = "inspec/resources/os/podman_pod.md podman_pod resource"
+    title = "podman_container"
+    identifier = "inspec/resources/os/podman_container.md podman_container resource"
     parent = "inspec/resources/os"
 +++
 
-Use the `podman_pod` Chef InSpec audit resource to test the ...
+Use the `podman_container` Chef InSpec audit resource to test the ...
 
 
 ## Availability
@@ -21,8 +21,6 @@ Use the `podman_pod` Chef InSpec audit resource to test the ...
 This resource is distributed along with Chef InSpec itself. You can use it automatically.
 
 ## Syntax
-
-A `podman_pod` Chef InSpec audit resource ...
 
 
 ## Properties
@@ -34,4 +32,5 @@ For a full list of available matchers, please visit our [matchers page](https://
 
 
 ## Examples
+
 The following examples show how to use this Chef InSpec audit resource.

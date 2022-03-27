@@ -48,6 +48,26 @@ end
 
 ### podman_container
 
+```
+describe podman_container('apache01') do
+    it { should exist }
+    it { should be_running }
+    its('id') { should_not eq '' }
+    its('pod') { should eq '' }
+    its('pod_name') { should eq '' }
+    its('image') { should eq 'docker.io/library/httpd:latest' }
+    its('repo') { should eq 'docker.io/library/httpd' }
+    its('tag') { should eq 'latest' }
+    its('ports') { should eq ["0.0.0.0:8890->80/tcp", " 0.0.0.0:8891->443/tcp"] }
+    its('command') { should eq 'httpd-foreground' }
+    its('labels') { should include 'app=httpd' }
+end
+      
+describe podman_container(id: '74ea6842be22') do
+    it { should exist }
+    it { should be_running }
+end
+```
 
 ### podman_image
 
