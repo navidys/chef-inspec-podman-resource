@@ -1,5 +1,4 @@
-# inspec-podman-resource
-Chef InSpec Podman Resource
+# Chef InSpec Podman Resource
 
 ----
 ## Resources
@@ -19,7 +18,7 @@ Chef InSpec Podman Resource
 
 ```
 describe podman.version do
-    its('Version') { should cmp >= '3.4.4' }
+    its('version') { should cmp >= '4.1.0' }
 end
 
 describe podman.pods do
